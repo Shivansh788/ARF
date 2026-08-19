@@ -1,0 +1,15 @@
+rule_id: demo-canary
+description: Detect a canary forwarded to a notification tool.
+match:
+  tool_name_pattern: send_notification
+  arguments_contains_any:
+    - ARF-DEMO-CANARY
+severity: high
+taxonomy:
+  asi:
+    - ASI02:2026
+  mcp:
+    - MCP10:2025
+status: stable
+validation:
+  status: stable
