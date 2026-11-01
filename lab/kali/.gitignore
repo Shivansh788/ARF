@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+reports/
+model_reports/
+comparisons/
