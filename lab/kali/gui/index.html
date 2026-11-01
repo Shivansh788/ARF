@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARF Lab Console</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><header><div><p class="eyebrow">LOCAL TWO-VM RESEARCH LAB</p><h1>ARF Lab Console</h1><p class="sub">Fixed MCP security scenarios · synthetic fixture data</p></div><button id="refresh" class="quiet">Check target</button></header>
+<section class="status"><span id="lamp"></span><div><b id="state">Checking target…</b><small id="target">Only 192.168.56.10:8000 is contacted</small></div><span id="profile" class="badge">—</span></section>
+<section class="panel"><div class="section-head"><div><h2>Run a scenario</h2><p>Choose a predefined case. Results show observed fixture evidence.</p></div></div><div class="controls"><label>Category<select id="category"><option>MCP01</option><option>MCP02</option><option>MCP07</option><option>MCP09</option></select></label><label>Scenario<select id="variant"></select></label><button id="run">Run case</button></div></section>
+<section class="panel"><div class="section-head"><div><h2>Run all nine cases</h2><p>Deterministic suite, scored against fixture ground truth.</p></div><button id="suite" class="secondary">Run suite</button></div></section>
+<section class="panel"><div class="section-head"><div><h2>Evidence</h2><p id="summary">Run a case to view its outcome and event record.</p></div><span id="resultBadge" class="badge hidden"></span></div><pre id="output">Ready when the lab target is running.</pre></section>
+<footer>Dashboard binds to this computer only. It offers no target, command, or prompt input.</footer></main><script src="/app.js"></script></body></html>
